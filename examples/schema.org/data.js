@@ -42130,3 +42130,4 @@ module.exports = async function getData() {
     }
   }
 ]
+}
