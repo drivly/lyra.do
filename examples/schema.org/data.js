@@ -1,5 +1,5 @@
 module.exports = async function getData() {
-  const schema = [
+  return [
   {
     id: "schema:spouse",
     type: "rdf:Property",
@@ -42130,65 +42130,3 @@ module.exports = async function getData() {
     }
   }
 ]
-
-
-return schema.map(item => ({
-  id: item.id,
-  type: Array.isArray(item.type) ? item.type.join(', ') : item.type, 
-  comment: item.comment.value ? item.comment.value : item.comment, 
-  label: item.label.value ? item.label.value : item.label, 
-  domainIncludes: Array.isArray(item.domainIncludes) ? item.domainIncludes.map(({id}) => id).join(', ') : item.domainIncludes?.id, 
-  rangeIncludes: Array.isArray(item.rangeIncludes) ? item.rangeIncludes.map(({id}) => id).join(', ') : item.rangeIncludes?.id, 
-  isPartOf: Array.isArray(item.isPartOf) ? item.isPartOf.map(({id}) => id).join(', ') : item.isPartOf?.id, 
-  source: Array.isArray(item.source) ? item.source.map(({id}) => id).join(', ') : item.source?.id, 
-  subClassOf: Array.isArray(item.subClassOf) ? item.subClassOf.map(({id}) => id).join(', ') : item.subClassOf?.id, 
-  exactMatch: Array.isArray(item.exactMatch) ? item.exactMatch.map(({id}) => id).join(', ') : item.exactMatch?.id, 
-  equivalentProperty: Array.isArray(item.equivalentProperty) ? item.equivalentProperty.map(({id}) => id).join(', ') : item.equivalentProperty?.id, 
-  subPropertyOf: Array.isArray(item.subPropertyOf) ? item.subPropertyOf.map(({id}) => id).join(', ') : item.subPropertyOf?.id, 
-  supersededBy: Array.isArray(item.supersededBy) ? item.supersededBy.map(({id}) => id).join(', ') : item.supersededBy?.id, 
-  closeMatch: Array.isArray(item.closeMatch) ? item.closeMatch.map(({id}) => id).join(', ') : item.closeMatch?.id, 
-  equivalentClass: Array.isArray(item.equivalentClass) ? item.equivalentClass.map(({id}) => id).join(', ') : item.equivalentClass?.id, 
-  inverseOf:  Array.isArray(item.inverseOf) ? item.inverseOf.map(({id}) => id).join(', ') : item.inverseOf?.id, 
-  sameAs: Array.isArray(item.sameAs) ? item.sameAs.map(({id}) => id).join(', ') : item.sameAs?.id, 
-}))
-
-}
-
-// export interface Schema {
-//   id:                  string;
-//   type:                Type;
-//   comment:             CommentUnion;
-//   label:               CommentUnion;
-//   domainIncludes?:     CloseMatch;
-//   rangeIncludes?:      CloseMatch;
-//   isPartOf?:           EquivalentProperty;
-//   source?:             CloseMatch;
-//   subClassOf?:         CloseMatch;
-//   exactMatch?:         EquivalentProperty;
-//   equivalentProperty?: EquivalentProperty;
-//   subPropertyOf?:      CloseMatch;
-//   supersededBy?:       EquivalentProperty;
-//   closeMatch?:         CloseMatch;
-//   equivalentClass?:    CloseMatch;
-//   inverseOf?:          EquivalentProperty;
-//   sameAs?:             EquivalentProperty;
-// }
-
-// export type CloseMatch = EquivalentProperty[] | EquivalentProperty;
-
-// export interface EquivalentProperty {
-//   id: string;
-// }
-
-// export type CommentUnion = CommentClass | string;
-
-// export interface CommentClass {
-//   language: Language;
-//   value:    string;
-// }
-
-// export enum Language {
-//   En = "en",
-// }
-
-// export type Type = string[] | string;
