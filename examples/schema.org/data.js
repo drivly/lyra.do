@@ -1,4 +1,5 @@
-export default async () => [
+module.exports = async function getData() {
+  return [
   {
     id: "schema:spouse",
     type: "rdf:Property",
@@ -42129,3 +42130,4 @@ export default async () => [
     }
   }
 ]
+}
