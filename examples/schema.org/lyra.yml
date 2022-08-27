@@ -1,0 +1,14 @@
+schema:
+  num: string
+  name: string
+  img: string
+  type: string
+  height: string
+  weight: string
+  weaknesses: string
+
+target:
+  platform: cloudflare
+
+data:
+  source: ./data.js

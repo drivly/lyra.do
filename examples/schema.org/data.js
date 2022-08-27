@@ -5466,7 +5466,7 @@ export default async () => [
   {
     id: "schema:ProductGroup",
     type: "rdfs:Class",
-    comment: "A ProductGroup represents a group of [[Product]]s that vary only in certain well-described ways, such as by [[size]], [[color]], [[material]] etc.\n\nWhile a ProductGroup itself is not directly offered for sale, the various varying products that it represents can be. The ProductGroup serves as a prototype or template, standing in for all of the products who have an [[isVariantOf]] relationship to it. As such, properties (including additional types) can be applied to the ProductGroup to represent characteristics shared by each of the (possibly very many) variants. Properties that reference a ProductGroup are not included in this mechanism; neither are the following specific properties [[variesBy]], [[hasVariant]], [[url]]. ,
+    comment: "A ProductGroup represents a group of [[Product]]s that vary only in certain well-described ways, such as by [[size]], [[color]], [[material]] etc.\n\nWhile a ProductGroup itself is not directly offered for sale, the various varying products that it represents can be. The ProductGroup serves as a prototype or template, standing in for all of the products who have an [[isVariantOf]] relationship to it. As such, properties (including additional types) can be applied to the ProductGroup to represent characteristics shared by each of the (possibly very many) variants. Properties that reference a ProductGroup are not included in this mechanism; neither are the following specific properties [[variesBy]], [[hasVariant]], [[url]]. ",
     label: "ProductGroup",
     subClassOf: {
       id: "schema:Product"
@@ -7320,7 +7320,7 @@ export default async () => [
   {
     id: "schema:OfferForPurchase",
     type: "rdfs:Class",
-    comment: "An [[OfferForPurchase]] in Schema.org represents an [[Offer]] to sell something, i.e. an [[Offer]] whose\n  [[businessFunction]] is [sell](http://purl.org/goodrelations/v1#Sell.). See [Good Relations](https://en.wikipedia.org/wiki/GoodRelations) for\n  background on the underlying concepts.\n  ,
+    comment: "An [[OfferForPurchase]] in Schema.org represents an [[Offer]] to sell something, i.e. an [[Offer]] whose\n  [[businessFunction]] is [sell](http://purl.org/goodrelations/v1#Sell.). See [Good Relations](https://en.wikipedia.org/wiki/GoodRelations) for\n  background on the underlying concepts.\n",
     label: "OfferForPurchase",
     subClassOf: {
       id: "schema:Offer"
@@ -7780,7 +7780,7 @@ export default async () => [
   {
     id: "schema:Claim",
     type: "rdfs:Class",
-    comment: "A [[Claim]] in Schema.org represents a specific, factually-oriented claim that could be the [[itemReviewed]] in a [[ClaimReview]]. The content of a claim can be summarized with the [[text]] property. Variations on well known claims can have their common identity indicated via [[sameAs]] links, and summarized with a [[name]]. Ideally, a [[Claim]] description includes enough contextual information to minimize the risk of ambiguity or inclarity. In practice, many claims are better understood in the context in which they appear or the interpretations provided by claim reviews.\n\n  Beyond [[ClaimReview]], the Claim type can be associated with related creative works - for example a [[ScholarlyArticle]] or [[Question]] might be [[about]] some [[Claim]].\n\n  At this time, Schema.org does not define any types of relationship between claims. This is a natural area for future exploration.\n  ,
+    comment: "A [[Claim]] in Schema.org represents a specific, factually-oriented claim that could be the [[itemReviewed]] in a [[ClaimReview]]. The content of a claim can be summarized with the [[text]] property. Variations on well known claims can have their common identity indicated via [[sameAs]] links, and summarized with a [[name]]. Ideally, a [[Claim]] description includes enough contextual information to minimize the risk of ambiguity or inclarity. In practice, many claims are better understood in the context in which they appear or the interpretations provided by claim reviews.\n\n  Beyond [[ClaimReview]], the Claim type can be associated with related creative works - for example a [[ScholarlyArticle]] or [[Question]] might be [[about]] some [[Claim]].\n\n  At this time, Schema.org does not define any types of relationship between claims. This is a natural area for future exploration.\n",
     label: "Claim",
     subClassOf: {
       id: "schema:CreativeWork"
@@ -10259,7 +10259,7 @@ export default async () => [
   {
     id: "schema:sizeGroup",
     type: "rdf:Property",
-    comment: "The size group (also known as \"size type\") for a product's size. Size groups are common in the fashion industry to define size segments and suggested audiences for wearable products. Multiple values can be combined, for example \"men's big and tall\", \"petite maternity\" or \"regular\",
+    comment: "The size group (also known as \"size type\") for a product's size. Size groups are common in the fashion industry to define size segments and suggested audiences for wearable products. Multiple values can be combined, for example \"men's big and tall\", \"petite maternity\" or \"regular\"",
     label: "sizeGroup",
     domainIncludes: {
       id: "schema:SizeSpecification"
@@ -10598,7 +10598,7 @@ export default async () => [
   {
     id: "schema:numberOfForwardGears",
     type: "rdf:Property",
-    comment: "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62,
+    comment: "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62",
     label: "numberOfForwardGears",
     domainIncludes: {
       id: "schema:Vehicle"
@@ -11865,7 +11865,7 @@ export default async () => [
   {
     id: "schema:numberOfPreviousOwners",
     type: "rdf:Property",
-    comment: "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62,
+    comment: "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62",
     label: "numberOfPreviousOwners",
     domainIncludes: {
       id: "schema:Vehicle"
@@ -14003,7 +14003,7 @@ export default async () => [
   {
     id: "schema:wheelbase",
     type: "rdf:Property",
-    comment: "The distance between the centers of the front and rear wheels.\\n\\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet,
+    comment: "The distance between the centers of the front and rear wheels.\\n\\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet",
     label: "wheelbase",
     domainIncludes: {
       id: "schema:Vehicle"
@@ -15567,7 +15567,7 @@ export default async () => [
   {
     id: "schema:geoTouches",
     type: "rdf:Property",
-    comment: "Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points.\" (a symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM) ),
+    comment: "Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points.\" (a symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM) )",
     label: "geoTouches",
     domainIncludes: [
       {
@@ -16009,7 +16009,7 @@ export default async () => [
   {
     id: "schema:translationOfWork",
     type: "rdf:Property",
-    comment: "The work that this work has been translated from. e.g. ç‰©ç§\u008dèµ·æº\u0090 is a translationOf â€œOn the Origin of Speciesâ€\u009d,
+    comment: "The work that this work has been translated from. e.g. ç‰©ç§\u008dèµ·æº\u0090 is a translationOf â€œOn the Origin of Speciesâ€\u009d",
     label: "translationOfWork",
     domainIncludes: {
       id: "schema:CreativeWork"
@@ -18803,7 +18803,7 @@ export default async () => [
   {
     id: "schema:geoEquals",
     type: "rdf:Property",
-    comment: "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM). \"Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other\" (a symmetric relationship),
+    comment: "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM). \"Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other\" (a symmetric relationship)",
     label: "geoEquals",
     domainIncludes: [
       {
@@ -19081,7 +19081,7 @@ export default async () => [
   {
     id: "schema:RealEstateListing",
     type: "rdfs:Class",
-    comment: "A [[RealEstateListing]] is a listing that describes one or more real-estate [[Offer]]s (whose [[businessFunction]] is typically to lease out, or to sell).\n  The [[RealEstateListing]] type itself represents the overall listing, as manifested in some [[WebPage]].\n  ,
+    comment: "A [[RealEstateListing]] is a listing that describes one or more real-estate [[Offer]]s (whose [[businessFunction]] is typically to lease out, or to sell).\n  The [[RealEstateListing]] type itself represents the overall listing, as manifested in some [[WebPage]].\n",
     label: "RealEstateListing",
     subClassOf: {
       id: "schema:WebPage"
@@ -20043,7 +20043,7 @@ export default async () => [
   {
     id: "schema:HealthTopicContent",
     type: "rdfs:Class",
-    comment: "[[HealthTopicContent]] is [[WebContent]] that is about some aspect of a health topic, e.g. a condition, its symptoms or treatments. Such content may be comprised of several parts or sections and use different types of media. Multiple instances of [[WebContent]] (and hence [[HealthTopicContent]]) can be related using [[hasPart]] / [[isPartOf]] where there is some kind of content hierarchy, and their content described with [[about]] and [[mentions]] e.g. building upon the existing [[MedicalCondition]] vocabulary.\n  ,
+    comment: "[[HealthTopicContent]] is [[WebContent]] that is about some aspect of a health topic, e.g. a condition, its symptoms or treatments. Such content may be comprised of several parts or sections and use different types of media. Multiple instances of [[WebContent]] (and hence [[HealthTopicContent]]) can be related using [[hasPart]] / [[isPartOf]] where there is some kind of content hierarchy, and their content described with [[about]] and [[mentions]] e.g. building upon the existing [[MedicalCondition]] vocabulary.\n",
     label: "HealthTopicContent",
     subClassOf: {
       id: "schema:WebContent"
@@ -23020,7 +23020,7 @@ export default async () => [
   {
     id: "schema:numberOfAxles",
     type: "rdf:Property",
-    comment: "The number of axles.\\n\\nTypical unit code(s): C62,
+    comment: "The number of axles.\\n\\nTypical unit code(s): C62",
     label: "numberOfAxles",
     domainIncludes: {
       id: "schema:Vehicle"
@@ -25240,7 +25240,7 @@ export default async () => [
   {
     id: "schema:numberOfDoors",
     type: "rdf:Property",
-    comment: "The number of doors.\\n\\nTypical unit code(s): C62,
+    comment: "The number of doors.\\n\\nTypical unit code(s): C62",
     label: "numberOfDoors",
     domainIncludes: {
       id: "schema:Vehicle"
@@ -25260,7 +25260,7 @@ export default async () => [
   {
     id: "schema:CreativeWorkSeries",
     type: "rdfs:Class",
-    comment: "A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. CreativeWorkSeries are usually organized into some order, often chronological. Unlike [[ItemList]] which is a general purpose data structure for lists of things, the emphasis with CreativeWorkSeries is on published materials (written e.g. books and periodicals, or media such as tv, radio and games).\\n\\nSpecific subtypes are available for describing [[TVSeries]], [[RadioSeries]], [[MovieSeries]], [[BookSeries]], [[Periodical]] and [[VideoGameSeries]]. In each case, the [[hasPart]] / [[isPartOf]] properties can be used to relate the CreativeWorkSeries to its parts. The general CreativeWorkSeries type serves largely just to organize these more specific and practical subtypes.\\n\\nIt is common for properties applicable to an item from the series to be usefully applied to the containing group. Schema.org attempts to anticipate some of these cases, but publishers should be free to apply properties of the series parts to the series as a whole wherever they seem appropriate.\n\t  ,
+    comment: "A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. CreativeWorkSeries are usually organized into some order, often chronological. Unlike [[ItemList]] which is a general purpose data structure for lists of things, the emphasis with CreativeWorkSeries is on published materials (written e.g. books and periodicals, or media such as tv, radio and games).\\n\\nSpecific subtypes are available for describing [[TVSeries]], [[RadioSeries]], [[MovieSeries]], [[BookSeries]], [[Periodical]] and [[VideoGameSeries]]. In each case, the [[hasPart]] / [[isPartOf]] properties can be used to relate the CreativeWorkSeries to its parts. The general CreativeWorkSeries type serves largely just to organize these more specific and practical subtypes.\\n\\nIt is common for properties applicable to an item from the series to be usefully applied to the containing group. Schema.org attempts to anticipate some of these cases, but publishers should be free to apply properties of the series parts to the series as a whole wherever they seem appropriate.\n\t",
     label: "CreativeWorkSeries",
     subClassOf: [
       {
@@ -26657,7 +26657,7 @@ export default async () => [
   {
     id: "schema:accessibilitySummary",
     type: "rdf:Property",
-    comment: "A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as \"short descriptions are present but long descriptions will be needed for non-visual users\" or \"short descriptions are present and no long descriptions are needed.\",
+    comment: "A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as \"short descriptions are present but long descriptions will be needed for non-visual users\" or \"short descriptions are present and no long descriptions are needed.\"",
     label: "accessibilitySummary",
     domainIncludes: {
       id: "schema:CreativeWork"
@@ -28196,7 +28196,7 @@ export default async () => [
   {
     id: "schema:BusinessEntityType",
     type: "rdfs:Class",
-    comment: "A business entity type is a conceptual entity representing the legal form, the size, the main line of business, the position in the value chain, or any combination thereof, of an organization or business person.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#Business\\n* http://purl.org/goodrelations/v1#Enduser\\n* http://purl.org/goodrelations/v1#PublicInstitution\\n* http://purl.org/goodrelations/v1#Reseller\n\t  ,
+    comment: "A business entity type is a conceptual entity representing the legal form, the size, the main line of business, the position in the value chain, or any combination thereof, of an organization or business person.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#Business\\n* http://purl.org/goodrelations/v1#Enduser\\n* http://purl.org/goodrelations/v1#PublicInstitution\\n* http://purl.org/goodrelations/v1#Reseller\n\t",
     label: "BusinessEntityType",
     subClassOf: {
       id: "schema:Enumeration"
@@ -29838,7 +29838,7 @@ export default async () => [
   {
     id: "schema:conditionsOfAccess",
     type: "rdf:Property",
-    comment: "Conditions that affect the availability of, or method(s) of access to, an item. Typically used for real world items such as an [[ArchiveComponent]] held by an [[ArchiveOrganization]]. This property is not suitable for use as a general Web access control mechanism. It is expressed only in natural language.\\n\\nFor example \"Available by appointment from the Reading Room\" or \"Accessible only from logged-in accounts \". ,
+    comment: "Conditions that affect the availability of, or method(s) of access to, an item. Typically used for real world items such as an [[ArchiveComponent]] held by an [[ArchiveOrganization]]. This property is not suitable for use as a general Web access control mechanism. It is expressed only in natural language.\\n\\nFor example \"Available by appointment from the Reading Room\" or \"Accessible only from logged-in accounts \". ",
     label: "conditionsOfAccess",
     domainIncludes: {
       id: "schema:CreativeWork"
@@ -30002,7 +30002,7 @@ export default async () => [
   {
     id: "schema:geoDisjoint",
     type: "rdf:Property",
-    comment: "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries.\" (a symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM)),
+    comment: "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries.\" (a symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM))",
     label: "geoDisjoint",
     domainIncludes: [
       {
@@ -33480,7 +33480,7 @@ export default async () => [
   {
     id: "schema:mileageFromOdometer",
     type: "rdf:Property",
-    comment: "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.\\n\\nTypical unit code(s): KMT for kilometers, SMI for statute miles,
+    comment: "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.\\n\\nTypical unit code(s): KMT for kilometers, SMI for statute miles",
     label: "mileageFromOdometer",
     domainIncludes: {
       id: "schema:Vehicle"
@@ -33985,7 +33985,7 @@ export default async () => [
   {
     id: "schema:Observation",
     type: "rdfs:Class",
-    comment: "Instances of the class [[Observation]] are used to specify observations about an entity (which may or may not be an instance of a [[StatisticalPopulation]]), at a particular time. The principal properties of an [[Observation]] are [[observedNode]], [[measuredProperty]], [[measuredValue]] (or [[median]], etc.) and [[observationDate]] ([[measuredProperty]] properties can, but need not always, be W3C RDF Data Cube \"measure properties\", as in the [lifeExpectancy example](https://www.w3.org/TR/vocab-data-cube/#dsd-example)).\nSee also [[StatisticalPopulation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ,
+    comment: "Instances of the class [[Observation]] are used to specify observations about an entity (which may or may not be an instance of a [[StatisticalPopulation]]), at a particular time. The principal properties of an [[Observation]] are [[observedNode]], [[measuredProperty]], [[measuredValue]] (or [[median]], etc.) and [[observationDate]] ([[measuredProperty]] properties can, but need not always, be W3C RDF Data Cube \"measure properties\", as in the [lifeExpectancy example](https://www.w3.org/TR/vocab-data-cube/#dsd-example)).\nSee also [[StatisticalPopulation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n",
     label: "Observation",
     subClassOf: {
       id: "schema:Intangible"
@@ -34705,7 +34705,7 @@ export default async () => [
   {
     id: "schema:floorSize",
     type: "rdf:Property",
-    comment: "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard ,
+    comment: "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard ",
     label: "floorSize",
     domainIncludes: [
       {
@@ -35084,7 +35084,7 @@ export default async () => [
   {
     id: "schema:seatingCapacity",
     type: "rdf:Property",
-    comment: "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons ,
+    comment: "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons ",
     label: "seatingCapacity",
     domainIncludes: {
       id: "schema:Vehicle"
@@ -38762,7 +38762,7 @@ export default async () => [
   {
     id: "schema:occupancy",
     type: "rdf:Property",
-    comment: "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person,
+    comment: "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person",
     label: "occupancy",
     domainIncludes: [
       {
@@ -39690,7 +39690,7 @@ export default async () => [
     equivalentProperty: {
       id: "http://data.europa.eu/eli/ontology#version_date"
     },
-    comment: "The point-in-time at which the provided description of the legislation is valid (e.g. : when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the \"National Insurance Contributions Act 2015\"),
+    comment: "The point-in-time at which the provided description of the legislation is valid (e.g. : when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the \"National Insurance Contributions Act 2015\")",
     label: "legislationDateVersion",
     domainIncludes: {
       id: "schema:Legislation"
@@ -41351,7 +41351,7 @@ export default async () => [
   {
     id: "schema:StatisticalPopulation",
     type: "rdfs:Class",
-    comment: "A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a [[StatisticalPopulation]] representing all [[Person]]s with a [[homeLocation]] of East Podunk California, would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a [[StatisticalPopulation]] item that stands for that set of people.\nThe properties [[numConstraints]] and [[constrainingProperty]] are used to specify which of the populations properties are used to specify the population. Note that the sense of \"population\" used here is the general sense of a statistical\npopulation, and does not imply that the population consists of people. For example, a [[populationType]] of [[Event]] or [[NewsArticle]] could be used. See also [[Observation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ,
+    comment: "A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a [[StatisticalPopulation]] representing all [[Person]]s with a [[homeLocation]] of East Podunk California, would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a [[StatisticalPopulation]] item that stands for that set of people.\nThe properties [[numConstraints]] and [[constrainingProperty]] are used to specify which of the populations properties are used to specify the population. Note that the sense of \"population\" used here is the general sense of a statistical\npopulation, and does not imply that the population consists of people. For example, a [[populationType]] of [[Event]] or [[NewsArticle]] could be used. See also [[Observation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n",
     label: "StatisticalPopulation",
     subClassOf: {
       id: "schema:Intangible"
