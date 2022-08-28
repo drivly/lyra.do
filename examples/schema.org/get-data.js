@@ -1,6 +1,6 @@
 module.exports = async function getData() {
   return require('./dataset.json').map(schema => ({
-    id: schema.id,
+    name: schema.id,
     type: Array.isArray(schema.type) ? schema.type.join(', ') : schema.type,
     comment: Array.isArray(schema.comment) ? schema.comment.map(({value}) => value).join(', ') : schema.comment.value,
     label: Array.isArray(schema.label) ? schema.label.map(({value}) => value).join(', ') : schema.label.value,
