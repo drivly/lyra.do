@@ -20,44 +20,6 @@ module.exports = async function getData() {
   }))
 }
 
-// export interface Schema {
-//   id:                  string;
-//   type:                Type;
-//   comment:             CommentUnion;
-//   label:               CommentUnion;
-//   domainIncludes?:     CloseMatch;
-//   rangeIncludes?:      CloseMatch;
-//   isPartOf?:           EquivalentProperty;
-//   source?:             CloseMatch;
-//   subClassOf?:         CloseMatch;
-//   exactMatch?:         EquivalentProperty;
-//   equivalentProperty?: EquivalentProperty;
-//   subPropertyOf?:      CloseMatch;
-//   supersededBy?:       EquivalentProperty;
-//   closeMatch?:         CloseMatch;
-//   equivalentClass?:    CloseMatch;
-//   inverseOf?:          EquivalentProperty;
-//   sameAs?:             EquivalentProperty;
-// }
-
-// export type CloseMatch = EquivalentProperty[] | EquivalentProperty;
-
-// export interface EquivalentProperty {
-//   id: string;
-// }
-
-// export type CommentUnion = CommentClass | string;
-
-// export interface CommentClass {
-//   language: Language;
-//   value:    string;
-// }
-
-// export enum Language {
-//   En = "en",
-// }
-
-// export type Type = string[] | string;
 
 const schemas = [
   {
