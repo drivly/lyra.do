@@ -21,4 +21,4 @@ target:
   platform: cloudflare
 
 data:
-  source: ./data.js
+  source: ./get-data.js
