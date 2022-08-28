@@ -4,29 +4,37 @@ schema:
   name: string
   type: string
   comment: string
-  # label: string
-  # domainIncludes: string
-  # rangeIncludes: string
-  # isPartOf: string
-  # source: string
-  # subClassOf: string
-  # exactMatch: string
-  # equivalentProperty: string
-  # subPropertyOf: string
-  # supersededBy: string
-  # closeMatch: string
-  # equivalentClass: string
-  # inverseOf: string
-  # sameAs: string
+  label: string
+  domainIncludes: string
+  rangeIncludes: string
+  isPartOf: string
+  source: string
+  subClassOf: string
+  exactMatch: string
+  equivalentProperty: string
+  subPropertyOf: string
+  supersededBy: string
+  closeMatch: string
+  equivalentClass: string
+  inverseOf: string
+  sameAs: string
 
-input:
-  path: ./get-data.js
 
-output:
-  name: worker.js
-  directory: src
+# input:
+#   path: ./get-data.js
 
-deploy:
+# output:
+#   name: worker.js
+#   directory: src
+
+# deploy:
+#   platform: cloudflare
+#   configuration:
+#     workerName: schema-do
+
+
+target:
   platform: cloudflare
-  configuration:
-    workerName: schema-do
+
+data:
+  source: ./get-data.js
